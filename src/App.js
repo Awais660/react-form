@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Box from "./user/Box";
+import Toggle from "./user/Toggle";
+import Form from "./user/Form";
+import Profile from "./user/Profile";
+import Login from "./user/Login";
+import Func from "./user/Func";
+
+function pro(){
+  alert("hello from app");
+}
+
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <Box />
+     <br></br>
+     <Toggle />
+     <br></br>
+     <Form />
+     <br></br>
+     <Profile />
+     <br></br> */}
+     <Login />
+     <br></br>
+     <Func data={pro}/>
     </div>
   );
 }
