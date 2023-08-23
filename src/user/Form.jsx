@@ -20,7 +20,7 @@ function Form(){
                     <option>dc</option>
                 </select>
                 <br></br>
-                <input type='checkbox' onChange={(e)=>setTnc(e.target.value)}/>
+                <input type='checkbox' onChange={(e)=>setTnc(e.target.checked)}/>
                 <br></br>
                 <button type='submit'>submit</button>
         </form>
